@@ -1,0 +1,76 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# ---- Virtual Environments ----
+.venv/
+venv/
+env/
+ENV/
+*.env
+.env.*
+.env.local
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+.DS_Store
+
+# ---- Logs & Temp ----
+*.log
+*.tmp
+logs/
+tmp/
+.cache/
+.coverage
+.tox/
+pytest_cache/
+htmlcov/
+
+# ---- Docker / Compose ----
+docker-compose.override.yml
+*.pid
+*.sock
+*.db
+*.sqlite3
+
+# ---- Test & Local Data ----
+test_output/
+__snapshots__/
+data/
+*.rdb
+*.csv
+*.json
+*.yaml
+*.yml
+
+# ---- Prometheus / Grafana Local Files ----
+prometheus_data/
+grafana_data/
+
+# ---- Project Specific ----
+# Local mock docs and secrets
+docs/*.md
+!docs/design.png
+secrets/
+local_storage/
+__mocks__/
+
+# ---- MacOS / System ----
+.DS_Store
+Thumbs.db
