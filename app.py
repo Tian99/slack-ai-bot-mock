@@ -1,14 +1,14 @@
 import time, uuid
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import JSONResponse, PlainTextResponse
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from prometheus_client import make_asgi_app
-from slack_verifier import verify_slack_request
-from rate_limiter import TokenBucket
-from retriever import retrieve, compose, reload_cache
-from ai import mock_answer
-from response_builder import build_slack_message
-from metrics import (
+from utils.slack_verifier import verify_slack_request
+from utils.rate_limiter import TokenBucket
+from ai.retriever import retrieve, compose, reload_cache
+from ai.ai import mock_answer
+from ai.response_builder import build_slack_message
+from observability.metrics import (
     requests_total, latency_seconds, helpful_total,
     ai_tokens_total, ai_cost_usd_total
 )
