@@ -176,6 +176,11 @@ python -m uvicorn app:app --reload --port 8080
 
 ### 9.2 Test Commands
 
+**Unit Testing**
+```bash
+ pytest -v
+```
+
 **Health check**
 ```bash
 curl http://127.0.0.1:8080/health
