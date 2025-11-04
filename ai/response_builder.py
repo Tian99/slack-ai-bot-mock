@@ -1,5 +1,10 @@
 from typing import Dict, List
 
+
+"""
+Build a Slack Block Kit message with answer, sources, trace_id, and feedback buttons.
+"""
+
 def build_slack_message(answer: str, sources: List[str], trace_id: str) -> Dict:
     src_text = "\n".join(f"• `{s}`" for s in sources) or "• (no sources)"
     return {

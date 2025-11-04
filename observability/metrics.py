@@ -1,5 +1,8 @@
 from prometheus_client import Counter, Histogram
 
+"""
+Prometheus metrics for Slack AI Assistant — used for observability and FinOps.
+"""
 requests_total = Counter(
     "askit_requests_total", "Total /ask-it requests", ["user", "channel"]
 )

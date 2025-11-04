@@ -1,6 +1,10 @@
 import hmac, hashlib
 from config import SLACK_SIGNING_SECRET
 
+"""
+Slack request verifier — checks request authenticity using HMAC-SHA256.
+Ensures the event really comes from Slack and wasn’t tampered with.
+"""
 def verify_slack_request(timestamp: str, body: bytes, signature: str) -> bool:
     """Mock-friendly Slack signature verifier."""
     if not signature:

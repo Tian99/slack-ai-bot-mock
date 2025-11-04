@@ -1,6 +1,11 @@
 import os
 from dotenv import load_dotenv
 
+"""
+App configuration loader — loads environment variables from .env or system.
+Provides defaults for local development.
+"""
+
 load_dotenv()
 
 SLACK_SIGNING_SECRET = os.getenv("SLACK_SIGNING_SECRET", "dev-secret")

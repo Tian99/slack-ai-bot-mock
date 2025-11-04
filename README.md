@@ -162,7 +162,7 @@ AI Spend
 { "trace_id": "abc123", "user": "U123", "model": "gpt-4o-mini",
   "tokens_prompt": 320, "tokens_completion": 210, "cost_usd": 0.00106 }
 ```
-## 9. 🧪 Local Run & Testing Guide
+## 9. Local Run & Testing Guide
 
 ### 9.1 Quick Start (Mock Mode — No External Dependencies)
 ```bash

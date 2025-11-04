@@ -1,5 +1,9 @@
 import argparse, json, httpx
 
+"""
+Send a mock feedback (e.g. 👍/👎) to the /feedback API endpoint.
+"""
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--value", required=True, help='JSON like {"helpful": true, "trace_id": "abc"}')
